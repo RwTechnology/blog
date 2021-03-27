@@ -1,0 +1,176 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+#contenu
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#imagePost
+{
+    background: url("../images/computer8.jpg") no-repeat center/cover;
+    height: 60vh;
+    width: 45vw;
+}
+
+.avis
+{
+    background-color: rgba(65, 61, 61, 0.774);
+    height: 20%;
+    position: relative;
+    top: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.avis button
+{
+    font-size: 20px;
+   border-radius: 10px;
+   width: 100px;
+   padding: 5px;
+   outline: none;
+}
+
+.avis button :hover
+{
+   font-size: 25px;
+}
+
+.avis button span
+{
+   margin-right: 5px;
+}
+
+
+
+
+
+article
+{
+    width: 50%;
+}
+
+aside
+{
+    border-left: solid 1px black; 
+    width: 40%; 
+    height: 120vh;
+    overflow: scroll;
+}
+
+.asideMobile
+{
+    display: none;
+}
+
+aside img
+{
+    width: 100px;
+}
+
+aside #pub
+{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom:1px dashed black ;
+    display: flex;
+}
+
+.publicationOne
+{
+    border-top: 1px dashed black;
+}
+
+.actualite
+{
+    margin-left: 15px;
+}
+
+.actualiteEtat
+{
+    display: flex;
+    align-items: center;
+    color: green;
+}
+
+
+.actualiteLogo
+{
+    width: 130px;
+    background-color: orange;
+    color: white;
+    padding: 5px 0 5px 5px;
+    margin-right: 10px;
+}
+
+.actualite p
+{
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.actualiteLogo span
+{
+    background: black;
+    color: white;
+    position: relative;
+    right: -10%;
+    padding: 5px;
+    
+}
+
+@media(max-width: 800px)
+{
+    aside
+    {
+        display: none;
+    }
+
+    #contenu
+   {
+       width: 100%;
+    margin-top: 2rem;
+    display: block;
+  } 
+
+    #imagePost
+   {
+    width: 95vw;
+    margin-left: 2%;
+  }
+  
+  article
+  {
+      width: 100%;
+  }
+
+  #post
+  {
+      padding: 5px;
+  }
+
+  .asideMobile
+  {
+     display: block;
+     background:white ;
+     position: sticky;
+     bottom: 0;
+  }
+
+
+
+}
+
+

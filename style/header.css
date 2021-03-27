@@ -1,0 +1,154 @@
+
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+header #entete
+{
+    font-size: 20px;
+    background-color: orange;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #entete a
+{ 
+ text-decoration: none;
+ color: white;
+ cursor: pointer;
+}
+
+
+header #navBar
+{
+    background-color: rgba(240, 160, 11,0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#navBar   img
+{
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#navBar #menuMobile
+{
+    display: none;
+}
+
+
+#menuDesktop ul li
+{
+    display: inline-block;
+    margin-left: 50px;
+    font-size:25px;
+}
+
+
+#menuDesktop ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    letter-spacing: 5px;
+}
+
+ #menuDesktop ul li a:hover
+{
+    background-color: orange;
+    border-bottom: black solid 2px;
+    padding: 10px;
+}
+
+
+
+@media(max-width: 800px)
+{
+
+    header{
+        position: sticky;
+        top: 0;
+    }
+
+    #menuDesktop
+    {
+          display: none;
+    }
+
+    header #entete
+{
+    height: 70px;
+    flex-direction: column;
+}
+
+header #navBar
+{
+   display: block;
+
+}
+
+#menuMobile
+{
+    text-align: right;
+    margin-top: -15%;
+}
+
+#navBar #menuMobile
+{
+    display: block;
+}
+
+#navBar #menuMobile ul
+{
+    display: none;
+}
+
+.fa-bars
+{
+   font-size: 35px;
+   margin-right: 5%;
+}
+
+#toggler
+{
+    display: none;
+}
+
+#menuMobile #toggler:checked + .menu
+{
+    display: block;
+}
+
+.menu li
+{
+   
+     text-align: center; 
+    background-color: rgba(0, 0, 0,0.7); 
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.menu li a
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+}
+
+
+
+

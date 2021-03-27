@@ -1,0 +1,37 @@
+footer
+{
+   width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p
+{
+   margin: 20px 0;
+}
+
+footer #iconFooter
+{  
+   margin-bottom:5px;
+}
+
+footer #iconFooter i
+{
+    font-size: 30px;
+   color: orange;
+}
+
+@media(max-width: 800px)
+{
+   footer
+   {
+      font-size: 18px;
+      width: 100%;
+   }
+}

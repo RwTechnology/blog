@@ -1,0 +1,186 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#banner
+{
+    height: 100vh;
+   background:url('../images/computer4.jpg') no-repeat center/cover ;
+   background-attachment: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 2%;
+}
+
+#banner h1,#infoTech h1,#infoEnt h1,#infosup h1,#indTech h1
+{
+    font-size:60px ;
+    color: white;
+   background-color: rgba(19, 18, 18,0.7);
+   cursor: pointer;
+}
+
+#presentation
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#presentation .image img
+{
+ width: 85%;
+}
+
+#presentation .image
+{
+    margin: 15rem 0;
+    width: 40%;
+}
+
+#presentation .text
+{
+    width: 50%;
+    text-align: justify;
+}
+
+#presentation .text h1
+{
+   text-align: center;
+}
+
+#presentation ul
+{
+   margin: 3% 10%;
+}
+
+#infoTech,#infoEnt,#infosup,#indTech
+{
+    height: 40vh;
+    text-align: center;
+    background: url(../images/computer1.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoEnt
+{
+    background: url(../images/computer6.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+#infosup
+{
+    background: url(../images/computer11.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+#indTech 
+{
+    background: url(../images/computer8.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+
+
+#infoTech h1,#infoEnt h1,#infosup h1,#indTech h1
+{
+    font-size:35px;
+   padding: 2%;
+   border-radius: 7px;
+}
+
+.text
+{
+   margin: 2%;
+}
+
+
+@media(max-width: 800px)
+{
+   
+
+    #banner
+    {
+       height: 90vh;
+       width: 100%;
+       margin-bottom: 5%;
+    }
+
+    #banner h1
+    {
+        font-size:35px;
+        width: 100%;
+    }
+
+    #contenu
+    {
+        width: 100%;
+    }
+
+    #presentation
+{
+    flex-direction: column;
+    width: 100%;
+}
+
+   #presentation .image
+   {
+    margin: 0;
+    width: 100%;
+   }
+
+   #presentation .text
+{
+    width: 90%;
+}
+
+
+   #presentation .text p
+{
+   font-size: 20px;
+   font-family: sans-serif;
+   width: 100%;
+}
+
+#presentation .image img
+{
+ width: 100%;
+}
+
+#presentation .text ul
+{
+   font-size: 20px;
+   font-family: Helvetica;
+}
+
+#debat 
+{
+   width: 100%;
+}
+
+#debat .text
+{
+   font-size: 20px;
+   width: 90%;
+}
+
+#infoTech h1,#infoEnt h1,#infosup h1,#indTech h1
+{
+    font-size:30px;
+   border-radius: 0;
+}
+
+}
